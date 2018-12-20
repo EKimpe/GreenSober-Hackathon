@@ -1,4 +1,5 @@
 import React from 'react';
+import { TwitterTimelineEmbed } from 'react-twitter-embed';
 
 class Homepage extends React.Component {
   constructor(props) {
@@ -8,7 +9,11 @@ class Homepage extends React.Component {
   render() {
     return (
       <div container-fluid='true'>
-        <img className='img-fluid bg-img' src='./bg-Homepage.jpg' alt='cook' />
+        <img
+          className='img-fluid bg-img'
+          src='./bg-Homepage.jpg'
+          alt='background'
+        />
         <div className='row text-center'>
           <div className='col-lg-3 pt-5'>
             <p className='approach'>Chiffres-clés</p>
@@ -53,7 +58,13 @@ class Homepage extends React.Component {
             </button>
           </div>
           <div className='col-lg-3 pt-5'>
-            <div id='lastTweet'>Derniers tweets</div>
+            <div>
+              <TwitterTimelineEmbed
+                sourceType='profile'
+                screenName='green_sober'
+                options={{ height: 800, width: 400 }}
+              />
+            </div>
           </div>
         </div>
       </div>
