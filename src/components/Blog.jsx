@@ -1,5 +1,4 @@
 import React, { Component } from "react";
-<<<<<<< HEAD
 import {
   Card,
   Button,
@@ -119,7 +118,5 @@ class Blog extends Component {
     );
   }
 }
-=======
->>>>>>> b6bb0837888a066c9aa1b4beb9c1488e71113cd4
 
 export default Blog;
