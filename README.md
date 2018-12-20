@@ -1,2 +1,2 @@
-# GreenSober-Hackaton
-Hackaton's repository of GreenSober's team.
+# GreenSober-Hackathon
+Hackathon's repository of GreenSober's team.
