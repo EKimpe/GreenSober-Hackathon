@@ -4,6 +4,7 @@ import "./App.css";
 import Accueil from "./components/Accueil";
 import Quiz from "./components/Quiz";
 import Blog from "./components/Blog";
+import Twitter from "./components/Twitter";
 
 class App extends Component {
   render() {
@@ -14,6 +15,7 @@ class App extends Component {
             <Route exact path="/" component={Accueil} />
             <Route path="/quiz" component={Quiz} />
             <Route path="/blog" component={Blog} />
+            <Route path="/twitter" component={Twitter} />
           </Switch>
         </BrowserRouter>
       </div>
