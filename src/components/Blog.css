@@ -1,7 +1,8 @@
 body {
-  background-color: grey;
+  background-color: rgb(255, 255, 255);
 }
 
-.CardGroup {
-  padding-bottom: 500px;
+div {
+  resize: both;
+  overflow: auto;
 }
