@@ -6,7 +6,7 @@
 
 .questionLabel {
   font-weight: bold;
-  font-size: 1.1em;
+  font-size: 1.3em;
   padding: 15px;
 }
 
@@ -16,6 +16,15 @@
 }
 
 .nextQuestion {
-  background-color: #95efb5;
+  background-color: #7adb9c;
   margin: 15px;
+  color: white;
+  font-weight: bold;
+}
+
+.nextQuestion:hover {
+  background-color: #58a172;
+  margin: 15px;
+  color: white;
+  font-weight: bold;
 }
