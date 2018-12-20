@@ -29,138 +29,6 @@ const answer = {
       tailleEcran: '5 pouces',
       id: 1
     },
-    {
-      constructeur: 'SONY',
-      marque: 'XPERIA L',
-      dateSortie: '2017',
-      prixGlobalSur2Ans: '322 euros',
-      prixProduit: '299 euros',
-      prixConsommationsSur2Ans: '23 euros',
-      noteGenerale: 'B+',
-      noteConstructeur: 'B+',
-      noteImpactEnvironnemental: 'B-',
-      noteConsommationEnergie: 'D-',
-      label: '',
-      lesPlus: [
-        'Ne contient pas de PVC dans les parties extérieures du produit',
-        'Est exempt de Retardateurs de Flamme Halogénés dans la coque externe',
-        'Ne contient pas de mercure dans les sources de lumière',
-        'Est exempt de Retardateurs de Flamme Halogénés dans les circuits imprimés',
-        'Ne contient pas de PVC dans l electronique du produit'
-      ],
-      lesMoins: [
-        'Ne possède pas un emballage monomatière',
-        'Ne propose aucune pièce de rechange'
-      ],
-      DAS: '0.63',
-      consommationEnergetiqueEnMarche: '4.25W',
-      consommationEnergetiqueEnVeille: '0.03W',
-      systemeExploitation: 'Android',
-      autonomieAppel: '9h',
-      memoireInterne: '16Go',
-      tailleEcran: '4.3 pouces',
-      id: 2
-    },
-    {
-      constructeur: 'APPLE',
-      marque: 'IPONE 7',
-      dateSortie: '2016',
-      prixGlobalSur2Ans: '783 euros',
-      prixProduit: '769 euros',
-      prixConsommationsSur2Ans: '14 euros',
-      noteGenerale: 'B-',
-      noteConstructeur: 'C+',
-      noteImpactEnvironnemental: 'C+',
-      noteConsommationEnergie: 'B+',
-      label: 'EPEAT',
-      lesPlus: [
-        'Ne contient pas de PVC dans les parties extérieures du produit',
-        'Est exempt de Retardateurs de Flamme Halogénés dans la coque externe',
-        'Ne contient pas de mercure dans les sources de lumière',
-        'Est exempt de Retardateurs de Flamme Halogénés dans les circuits imprimés',
-        'Ne contient pas de PVC dans l electronique du produit'
-      ],
-      lesMoins: [
-        'Possède un DAS (ou SAR) supérieur à 0.6 W/kg',
-        'Ne possède pas un emballage monomatière',
-        'Impossibilité d extension ou d échange de la batterie',
-        'Impossibilité d extension ou d échange de la capacité de stockage',
-        'Ne possède pas de batterie facilement séparable'
-      ],
-      DAS: '1.38',
-      consommationEnergetiqueEnMarche: '1.54W',
-      consommationEnergetiqueEnVeille: '0.1W',
-      systemeExploitation: 'IOS',
-      autonomieAppel: '14h',
-      memoireInterne: '32Go',
-      tailleEcran: '4.7 pouces',
-      id: 3
-    },
-    {
-      constructeur: 'HUAWAI',
-      marque: 'P10 LITE',
-      dateSortie: '2017',
-      prixGlobalSur2Ans: '361 euros',
-      prixProduit: '349 euros',
-      prixConsommationsSur2Ans: '12 euros',
-      noteGenerale: 'B-',
-      noteConstructeur: 'C+',
-      noteImpactEnvironnemental: 'C+',
-      noteConsommationEnergie: 'C+',
-      label: '',
-      lesPlus: [
-        'Ne contient pas de PVC dans les parties extérieures du produit',
-        'Est exempt de Retardateurs de Flamme Halogénés dans la coque externe',
-        'Ne contient pas de mercure dans les sources de lumière',
-        'Est exempt de Retardateurs de Flamme Halogénés dans les circuits imprimés'
-      ],
-      lesMoins: [
-        'Ne possède pas un emballage monomatière',
-        'Impossibilité d extension ou d échange de la batterie',
-        'Ne possède pas de batterie facilement séparable'
-      ],
-      DAS: '0.89',
-      consommationEnergetiqueEnMarche: '1.92W',
-      consommationEnergetiqueEnVeille: '0.17W',
-      systemeExploitation: 'Android',
-      autonomieAppel: '20h',
-      memoireInterne: '32Go',
-      tailleEcran: '5.2 pouces',
-      id: 4
-    },
-
-    {
-      constructeur: 'SONY',
-      marque: 'XPERIA XZ1',
-      dateSortie: '2017',
-      prixGlobalSur2Ans: '714 euros',
-      prixProduit: '699 euros',
-      prixConsommationsSur2Ans: '15 euros',
-      noteGenerale: 'B-',
-      noteConstructeur: 'B+',
-      noteImpactEnvironnemental: 'C+',
-      noteConsommationEnergie: 'D+',
-      label: '',
-      lesPlus: [
-        'Possède un DAS proche de 0.6 W/kg',
-        'Ne contient pas de PVC dans les parties extérieures du produit',
-        'Est exempt de Retardateurs de Flamme Halogénés dans la coque externe',
-        'Ne contient pas de mercure dans les sources de lumière',
-        'Est exempt de Retardateurs de Flamme Halogénés dans les circuits imprimés'
-      ],
-      lesMoins: [
-        'Impossibilité d extension ou d échange de la batterie',
-        'Ne possède pas de batterie facilement séparable'
-      ],
-      DAS: '0.773',
-      consommationEnergetiqueEnMarche: '2.23W',
-      consommationEnergetiqueEnVeille: '0.31W',
-      systemeExploitation: 'Android',
-      autonomieAppel: '20h',
-      memoireInterne: '64Go',
-      tailleEcran: '5.2 pouces',
-      id: 5
-    },
 
     {
       constructeur: 'SONY',
@@ -195,74 +63,75 @@ const answer = {
       autonomieAppel: '10h',
       memoireInterne: '16Go',
       tailleEcran: '5 pouces',
-      id: 6
-    },
-    {
-      constructeur: 'APPLE',
-      marque: 'IPHONE X',
-      dateSortie: '2017',
-      prixGlobalSur2Ans: '1183 euros',
-      prixProduit: '1159 euros',
-      prixConsommationsSur2Ans: '24 euros',
-      noteGenerale: 'B-',
-      noteConstructeur: 'C+',
-      noteImpactEnvironnemental: 'C+',
-      noteConsommationEnergie: 'D+',
-      label: 'EPEAT, ENERGY STAR',
-      lesPlus: [
-        'Ne contient pas de PVC dans les parties extérieures du produit',
-        'Est exempt de Retardateurs de Flamme Halogénés dans la coque externe',
-        'Ne contient pas de mercure dans les sources de lumière',
-        'Est exempt de Retardateurs de Flamme Halogénés dans les circuits imprimés'
-      ],
-      lesMoins: [
-        'Ne possède pas un emballage monomatière',
-        'Impossibilité d extension ou d échange de la batterie',
-        'Ne possède pas de batterie facilement séparable',
-        'Impossibilité d extension ou d échange de la capacité de stockage'
-      ],
-      DAS: '0.98',
-      consommationEnergetiqueEnMarche: '2.6W',
-      consommationEnergetiqueEnVeille: '0.18W',
-      systemeExploitation: 'IOS',
-      autonomieAppel: '21h',
-      memoireInterne: '64Go',
-      tailleEcran: '5.8 pouces',
-      id: 7
+      id: 2
     },
 
     {
-      constructeur: 'APPLE',
-      marque: 'IPHONE 8 PLUS',
+      constructeur: 'SONY',
+      marque: 'XPERIA L',
       dateSortie: '2017',
-      prixGlobalSur2Ans: '1112 euros',
-      prixProduit: '1089 euros',
+      prixGlobalSur2Ans: '322 euros',
+      prixProduit: '299 euros',
       prixConsommationsSur2Ans: '23 euros',
-      noteGenerale: 'B-',
-      noteConstructeur: 'C+',
-      noteImpactEnvironnemental: 'C-',
-      noteConsommationEnergie: 'C-',
-      label: 'EPEAT, ENERGY STAR',
+      noteGenerale: 'B+',
+      noteConstructeur: 'B+',
+      noteImpactEnvironnemental: 'B-',
+      noteConsommationEnergie: 'D-',
+      label: '',
       lesPlus: [
         'Ne contient pas de PVC dans les parties extérieures du produit',
         'Est exempt de Retardateurs de Flamme Halogénés dans la coque externe',
         'Ne contient pas de mercure dans les sources de lumière',
-        'Est exempt de Retardateurs de Flamme Halogénés dans les circuits imprimés'
+        'Est exempt de Retardateurs de Flamme Halogénés dans les circuits imprimés',
+        'Ne contient pas de PVC dans l electronique du produit'
       ],
       lesMoins: [
         'Ne possède pas un emballage monomatière',
-        'Impossibilité d extension ou d échange de la batterie',
-        'Ne possède pas de batterie facilement séparable',
-        'Impossibilité d extension ou d échange de la capacité de stockage'
+        'Ne propose aucune pièce de rechange'
       ],
-      DAS: '0.99',
-      consommationEnergetiqueEnMarche: '2.52W',
-      consommationEnergetiqueEnVeille: '0.14W',
+      DAS: '0.63',
+      consommationEnergetiqueEnMarche: '4.25W',
+      consommationEnergetiqueEnVeille: '0.03W',
+      systemeExploitation: 'Android',
+      autonomieAppel: '9h',
+      memoireInterne: '16Go',
+      tailleEcran: '4.3 pouces',
+      id: 3
+    },
+    {
+      constructeur: 'APPLE',
+      marque: 'IPONE 7',
+      dateSortie: '2016',
+      prixGlobalSur2Ans: '783 euros',
+      prixProduit: '769 euros',
+      prixConsommationsSur2Ans: '14 euros',
+      noteGenerale: 'B-',
+      noteConstructeur: 'C+',
+      noteImpactEnvironnemental: 'C+',
+      noteConsommationEnergie: 'B+',
+      label: 'EPEAT',
+      lesPlus: [
+        'Ne contient pas de PVC dans les parties extérieures du produit',
+        'Est exempt de Retardateurs de Flamme Halogénés dans la coque externe',
+        'Ne contient pas de mercure dans les sources de lumière',
+        'Est exempt de Retardateurs de Flamme Halogénés dans les circuits imprimés',
+        'Ne contient pas de PVC dans l electronique du produit'
+      ],
+      lesMoins: [
+        'Possède un DAS (ou SAR) supérieur à 0.6 W/kg',
+        'Ne possède pas un emballage monomatière',
+        'Impossibilité d extension ou d échange de la batterie',
+        'Impossibilité d extension ou d échange de la capacité de stockage',
+        'Ne possède pas de batterie facilement séparable'
+      ],
+      DAS: '1.38',
+      consommationEnergetiqueEnMarche: '1.54W',
+      consommationEnergetiqueEnVeille: '0.1W',
       systemeExploitation: 'IOS',
-      autonomieAppel: '21h',
-      memoireInterne: '64Go',
-      tailleEcran: '5.5 pouces',
-      id: 8
+      autonomieAppel: '14h',
+      memoireInterne: '32Go',
+      tailleEcran: '4.7 pouces',
+      id: 4
     },
 
     {
@@ -298,38 +167,175 @@ const answer = {
       autonomieAppel: '14h',
       memoireInterne: '64Go',
       tailleEcran: '4 pouces',
-      id: 9
+      id: 5
     },
 
     {
-      constructeur: 'SAMSUNG',
-      marque: 'GALAXY A3',
+      constructeur: 'HUAWAI',
+      marque: 'P10 LITE',
       dateSortie: '2017',
-      prixGlobalSur2Ans: '334 euros',
-      prixProduit: '329 euros',
-      prixConsommationsSur2Ans: '5 euros',
-      noteGenerale: 'C+',
-      noteConstructeur: 'D-',
-      noteImpactEnvironnemental: 'D+',
-      noteConsommationEnergie: ' A+',
+      prixGlobalSur2Ans: '361 euros',
+      prixProduit: '349 euros',
+      prixConsommationsSur2Ans: '12 euros',
+      noteGenerale: 'B-',
+      noteConstructeur: 'C+',
+      noteImpactEnvironnemental: 'C+',
+      noteConsommationEnergie: 'C+',
       label: '',
       lesPlus: [
-        'Possède un DAS (ou SAR) inférieur à 0.6 W/kg',
-        'Possibilité de mise à jour du logiciel',
-        'Possibilité d extension ou d échange de la capacité de stockage',
-        'Est garanti 2 années'
+        'Ne contient pas de PVC dans les parties extérieures du produit',
+        'Est exempt de Retardateurs de Flamme Halogénés dans la coque externe',
+        'Ne contient pas de mercure dans les sources de lumière',
+        'Est exempt de Retardateurs de Flamme Halogénés dans les circuits imprimés'
+      ],
+      lesMoins: [
+        'Ne possède pas un emballage monomatière',
+        'Impossibilité d extension ou d échange de la batterie',
+        'Ne possède pas de batterie facilement séparable'
+      ],
+      DAS: '0.89',
+      consommationEnergetiqueEnMarche: '1.92W',
+      consommationEnergetiqueEnVeille: '0.17W',
+      systemeExploitation: 'Android',
+      autonomieAppel: '20h',
+      memoireInterne: '32Go',
+      tailleEcran: '5.2 pouces',
+      id: 6
+    },
+
+    {
+      constructeur: 'SONY',
+      marque: 'XPERIA XZ1',
+      dateSortie: '2017',
+      prixGlobalSur2Ans: '714 euros',
+      prixProduit: '699 euros',
+      prixConsommationsSur2Ans: '15 euros',
+      noteGenerale: 'B-',
+      noteConstructeur: 'B+',
+      noteImpactEnvironnemental: 'C+',
+      noteConsommationEnergie: 'D+',
+      label: '',
+      lesPlus: [
+        'Possède un DAS proche de 0.6 W/kg',
+        'Ne contient pas de PVC dans les parties extérieures du produit',
+        'Est exempt de Retardateurs de Flamme Halogénés dans la coque externe',
+        'Ne contient pas de mercure dans les sources de lumière',
+        'Est exempt de Retardateurs de Flamme Halogénés dans les circuits imprimés'
       ],
       lesMoins: [
         'Impossibilité d extension ou d échange de la batterie',
         'Ne possède pas de batterie facilement séparable'
       ],
-      DAS: '0.35',
-      consommationEnergetiqueEnMarche: '0.84W',
-      consommationEnergetiqueEnVeille: '0.07W',
+      DAS: '0.773',
+      consommationEnergetiqueEnMarche: '2.23W',
+      consommationEnergetiqueEnVeille: '0.31W',
       systemeExploitation: 'Android',
-      autonomieAppel: '17h',
-      memoireInterne: '16Go',
-      tailleEcran: '4.7 pouces',
+      autonomieAppel: '20h',
+      memoireInterne: '64Go',
+      tailleEcran: '5.2 pouces',
+      id: 7
+    },
+
+    {
+      constructeur: 'APPLE',
+      marque: 'IPHONE X',
+      dateSortie: '2017',
+      prixGlobalSur2Ans: '1183 euros',
+      prixProduit: '1159 euros',
+      prixConsommationsSur2Ans: '24 euros',
+      noteGenerale: 'B-',
+      noteConstructeur: 'C+',
+      noteImpactEnvironnemental: 'C+',
+      noteConsommationEnergie: 'D+',
+      label: 'EPEAT, ENERGY STAR',
+      lesPlus: [
+        'Ne contient pas de PVC dans les parties extérieures du produit',
+        'Est exempt de Retardateurs de Flamme Halogénés dans la coque externe',
+        'Ne contient pas de mercure dans les sources de lumière',
+        'Est exempt de Retardateurs de Flamme Halogénés dans les circuits imprimés'
+      ],
+      lesMoins: [
+        'Ne possède pas un emballage monomatière',
+        'Impossibilité d extension ou d échange de la batterie',
+        'Ne possède pas de batterie facilement séparable',
+        'Impossibilité d extension ou d échange de la capacité de stockage'
+      ],
+      DAS: '0.98',
+      consommationEnergetiqueEnMarche: '2.6W',
+      consommationEnergetiqueEnVeille: '0.18W',
+      systemeExploitation: 'IOS',
+      autonomieAppel: '21h',
+      memoireInterne: '64Go',
+      tailleEcran: '5.8 pouces',
+      id: 8
+    },
+
+    {
+      constructeur: 'APPLE',
+      marque: 'IPHONE 8 PLUS',
+      dateSortie: '2017',
+      prixGlobalSur2Ans: '1112 euros',
+      prixProduit: '1089 euros',
+      prixConsommationsSur2Ans: '23 euros',
+      noteGenerale: 'B-',
+      noteConstructeur: 'C+',
+      noteImpactEnvironnemental: 'C-',
+      noteConsommationEnergie: 'C-',
+      label: 'EPEAT, ENERGY STAR',
+      lesPlus: [
+        'Ne contient pas de PVC dans les parties extérieures du produit',
+        'Est exempt de Retardateurs de Flamme Halogénés dans la coque externe',
+        'Ne contient pas de mercure dans les sources de lumière',
+        'Est exempt de Retardateurs de Flamme Halogénés dans les circuits imprimés'
+      ],
+      lesMoins: [
+        'Ne possède pas un emballage monomatière',
+        'Impossibilité d extension ou d échange de la batterie',
+        'Ne possède pas de batterie facilement séparable',
+        'Impossibilité d extension ou d échange de la capacité de stockage'
+      ],
+      DAS: '0.99',
+      consommationEnergetiqueEnMarche: '2.52W',
+      consommationEnergetiqueEnVeille: '0.14W',
+      systemeExploitation: 'IOS',
+      autonomieAppel: '21h',
+      memoireInterne: '64Go',
+      tailleEcran: '5.5 pouces',
+      id: 9
+    },
+
+    {
+      constructeur: 'APLE',
+      marque: 'IPHONE XS MAX',
+      dateSortie: '2018',
+      prixGlobalSur2Ans: '976 euros',
+      prixProduit: '960 euros',
+      prixConsommationsSur2Ans: '16 euros',
+      noteGenerale: 'C-',
+      noteConstructeur: 'C+',
+      noteImpactEnvironnemental: 'C-',
+      noteConsommationEnergie: ' B-',
+      label: 'EPEAT, ENERGY STAR',
+      lesPlus: [
+        'Ne contient pas de PVC dans les parties extérieures du produit',
+        'Est exempt de Retardateurs de Flamme Halogénés dans la coque externe',
+        'Ne contient pas de mercure dans les sources de lumière',
+        'Est exempt de Retardateurs de Flamme Halogénés dans les circuits imprimés'
+      ],
+      lesMoins: [
+        'Ne possède pas un emballage monomatière',
+        'Impossibilité d extension ou d échange de la batterie',
+        'Impossibilité d extension ou d échange de la capacité de stockage',
+        'Ne possède pas de batterie facilement séparable',
+        'Ne communique aucune information sur le respect de REACH'
+      ],
+      DAS: '0.99',
+      consommationEnergetiqueEnMarche: '1.7W',
+      consommationEnergetiqueEnVeille: '0.12W',
+      systemeExploitation: 'IOS',
+      autonomieAppel: '25h',
+      memoireInterne: '256Go',
+      tailleEcran: '6.5 pouces',
       id: 10
     }
   ]
