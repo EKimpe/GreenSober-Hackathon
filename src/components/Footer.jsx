@@ -1,4 +1,5 @@
 import React from 'react';
+import { SocialIcon } from 'react-social-icons';
 
 const Footer = () => {
   return (
@@ -18,6 +19,9 @@ const Footer = () => {
             >
               Made with <span className='heart'>♥</span> by Wild Code School
             </a>
+          </li>
+          <li className='col-xs-12 col-sm-2 text-white'>
+            <SocialIcon url='https://twitter.com/green_sober' />
           </li>
         </ul>
       </div>
