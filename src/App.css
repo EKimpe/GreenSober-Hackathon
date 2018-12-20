@@ -8,15 +8,19 @@
 
 #nav-tool {
   background: linear-gradient(0.45turn, #a0f7bf, #73d696, #a0f7bf);
-  height: 50px;
 }
 
-.navigation {
-  color: white !important;
+#nav-item {
+  color: white;
   text-shadow: 1px 1px grey;
-  font-size: 30px;
+  font-size: 22px;
 }
 
+.img-fluid {
+  height: 300px;
+  width: 100%;
+  opacity: 0.7;
+}
 footer {
   background: linear-gradient(0.45turn, #a0f7bf, #73d696, #a0f7bf);
 }
@@ -34,10 +38,6 @@ footer {
   color: white;
 }
 
-#lastTweet {
-  width: 15%;
-}
-
 #bgHomepage {
   height: 300px;
 }
@@ -50,4 +50,11 @@ footer {
 
 .knowledge {
   padding-top: 100px;
+}
+
+@media screen and (max-width: 640px) {
+  #nav-item {
+    padding-left: 0 !important;
+    margin-left: 0 !important;
+  }
 }

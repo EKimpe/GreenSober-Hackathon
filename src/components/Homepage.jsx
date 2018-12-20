@@ -8,16 +8,14 @@ class Homepage extends React.Component {
   render() {
     return (
       <div container-fluid>
-        <div container-fluid id='bgHomepage'>
-          <img id='backgroundImg' src='./bg-Homepage.jpg' alt='background' />
-        </div>
-        <div className='row justify-content-center'>
-          <div className='col-lg-3 col-md-12'>
+        <img className='img-fluid' src='./bg-Homepage.jpg' alt='cook' />
+        <div className='row text-center'>
+          <div className='col-lg-3'>
             <p>Chiffres-clés</p>
             <br />
             <p className='knowledge'>Le saviez-vous?</p>
           </div>
-          <div className='col-lg-5 col-md-12'>
+          <div className='col-lg-6'>
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi
               impedit vero deleniti pariatur necessitatibus laborum accusamus
@@ -29,9 +27,11 @@ class Homepage extends React.Component {
               consequatur.
             </p>
             <br />
-            <button id='quizButton'>Accèdes au quiz</button>
+            <button id='quizButton' className='mb-4 mt-1'>
+              Accèdes au quiz
+            </button>
           </div>
-          <div className='col-lg-3 col-md-12'>
+          <div className='col-lg-3'>
             <div id='lastTweet'>Derniers tweets</div>
           </div>
         </div>
