@@ -7,8 +7,8 @@ class Twitter extends Component {
       <div>
         <TwitterTimelineEmbed
           sourceType="profile"
-          screenName="sobergreen"
-          options={{ height: 600 }}
+          screenName="green_sober"
+          options={{ height: 600, width: 300 }}
         />
       </div>
     );
