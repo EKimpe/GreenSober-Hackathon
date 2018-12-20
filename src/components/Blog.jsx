@@ -15,8 +15,6 @@ import {
   ModalHeader
 } from "reactstrap";
 
-//----------------------------------- CARDS ----->
-
 class Blog extends Component {
   constructor(props) {
     super(props);
