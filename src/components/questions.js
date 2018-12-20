@@ -1,7 +1,7 @@
 const quiz = {
   questions: [
     {
-      question: "Quels usages fais-tu de ton téléphone ?",
+      question: "1) Quels usages fais-tu de ton téléphone ?",
       answers: [
         { label: "Je téléphone et envoie des messages uniquement", point: 2 },
         { label: "Je surfe sur internet & je joue à des jeux", point: 4 },
@@ -18,7 +18,7 @@ const quiz = {
       id: 1
     },
     {
-      question: "Utilises-tu ton téléphone pour regarder des vidéos ?",
+      question: "2) Utilises-tu ton téléphone pour regarder des vidéos ?",
       answers: [
         { label: "Non, rarement...", point: 2 },
         { label: "Quelques fois par semaine", point: 4 },
@@ -34,7 +34,7 @@ const quiz = {
       id: 2
     },
     {
-      question: "Quel budget pour ton smartphone ?",
+      question: "3) Quel budget pour ton smartphone ?",
       answers: [
         { label: "0 à 400€", point: 2 },
         { label: "401 à 700€", point: 4 },
@@ -51,7 +51,7 @@ const quiz = {
     },
     {
       question:
-        "Penses-tu avoir beaucoup de données à stocker sur ton téléphone ?",
+        "4) Penses-tu avoir beaucoup de données à stocker sur ton téléphone ?",
       answers: [
         {
           label: "Non je ne fais que téléphoner et envoyer des messages (16Go)",
@@ -72,7 +72,7 @@ const quiz = {
       id: 4
     },
     {
-      question: "Et niveau appareil photo ?",
+      question: "5) Et niveau appareil photo ?",
       answers: [
         {
           label: "Je l’utilise rarement",
@@ -96,7 +96,7 @@ const quiz = {
       id: 5
     },
     {
-      question: "Que penses-tu des téléphones reconditionnés ?",
+      question: "6) Que penses-tu des téléphones reconditionnés ?",
       answers: [
         {
           label: "C’est quoi ce truc !?",
@@ -118,7 +118,7 @@ const quiz = {
       id: 6
     },
     {
-      question: "Pour toi la taille du téléphone est-elle importante ?",
+      question: "7) Pour toi la taille du téléphone est-elle importante ?",
       answers: [
         {
           label: "Il faut qu’il puisse tenir dans ma poche",
@@ -143,7 +143,7 @@ const quiz = {
     },
     {
       question:
-        "Pour toi la consommation énergétique de ton téléphone est-elle importante ?",
+        "8) Pour toi la consommation énergétique de ton téléphone est-elle importante ?",
       answers: [
         {
           label: "Non je ne fais pas attention, je m’en fiche",
@@ -166,7 +166,7 @@ const quiz = {
     },
     {
       question:
-        "Aimerais-tu un téléphone responsable ou composé de matériaux recyclés ?",
+        "9) Aimerais-tu un téléphone responsable ou composé de matériaux recyclés ?",
       answers: [
         {
           label: "Non hors de question, je n’ai pas confiance",
@@ -189,7 +189,7 @@ const quiz = {
       id: 9
     },
     {
-      question: "La marque de ton téléphone est-elle importante pour toi ?",
+      question: "10) La marque de ton téléphone est-elle importante pour toi ?",
       answers: [
         {
           label: "Oui, je ne jure que par la même marque depuis des années !",
