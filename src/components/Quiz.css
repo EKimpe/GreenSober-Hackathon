@@ -1,0 +1,30 @@
+.quiz {
+  padding: 15px;
+  text-align: center;
+  min-height: 100vh;
+}
+
+.questionLabel {
+  font-weight: bold;
+  font-size: 1.3em;
+  padding: 15px;
+}
+
+.answers {
+  text-align: left;
+  padding: 15px;
+}
+
+.nextQuestion {
+  background-color: #7adb9c;
+  margin: 15px;
+  color: white;
+  font-weight: bold;
+}
+
+.nextQuestion:hover {
+  background-color: #58a172;
+  margin: 15px;
+  color: white;
+  font-weight: bold;
+}

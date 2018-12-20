@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React from 'react';
 import {
   Collapse,
   Navbar,
@@ -9,39 +9,44 @@ import {
   NavLink
 } from 'reactstrap';
 
-class Header extends Component {
+class Header extends React.Component {
   constructor(props) {
     super(props);
+
     this.toggle = this.toggle.bind(this);
-    this.state = { isOpen: false };
+    this.state = {
+      isOpen: false
+    };
   }
-
   toggle() {
-    this.setState({ isOpen: !this.state.isOpen });
+    this.setState({
+      isOpen: !this.state.isOpen
+    });
   }
-
   render() {
     return (
-      <Navbar id='nav-tool' color='light' expand='md'>
-        <NavbarBrand href='/' className='mt-2 navigation'>
-          SoberGreen !
-        </NavbarBrand>
-        <NavbarToggler onClick={this.toggle} />
-        <Collapse isOpen={this.state.isOpen} navbar>
-          <Nav className='ml-5' navbar>
-            <NavItem>
-              <NavLink className='mt-2 ml-5 navigation' href='/Quiz'>
-                Quiz
-              </NavLink>
-            </NavItem>
-            <NavItem>
-              <NavLink className='mt-2 ml-5 navigation' href='/Blog'>
-                Le blog
-              </NavLink>
-            </NavItem>
-          </Nav>
-        </Collapse>
-      </Navbar>
+      <div>
+        <Navbar id='nav-tool' color='light' light expand='md'>
+          <NavbarBrand id='nav-item' href='/'>
+            SoberGreen!
+          </NavbarBrand>
+          <NavbarToggler onClick={this.toggle} />
+          <Collapse isOpen={this.state.isOpen} navbar>
+            <Nav className='mx-auto' navbar>
+              <NavItem>
+                <NavLink id='nav-item' className='pr-5 mr-5' href='/quiz/'>
+                  Quiz
+                </NavLink>
+              </NavItem>
+              <NavItem>
+                <NavLink id='nav-item' className='pl-5 ml-5' href='/blog'>
+                  Le Blog
+                </NavLink>
+              </NavItem>
+            </Nav>
+          </Collapse>
+        </Navbar>
+      </div>
     );
   }
 }
