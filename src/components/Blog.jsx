@@ -37,8 +37,9 @@ class Blog extends Component {
         <Card>
           <CardImg
             top
-            width="100%"
-            src="https://placeholdit.imgix.net/~text?txtsize=33&txt=256%C3%97180&w=256&h=180"
+            width="50%"
+            src="https://i.pinimg.com/564x/19/17/51/191751b40a4010018962f748b814abe3.jpg
+            "
             alt="Card image cap"
           />
           <CardBody>
@@ -60,8 +61,9 @@ class Blog extends Component {
         <Card>
           <CardImg
             top
-            width="100%"
-            src="https://placeholdit.imgix.net/~text?txtsize=33&txt=256%C3%97180&w=256&h=180"
+            width="50%"
+            src="https://i.pinimg.com/564x/1f/b5/b8/1fb5b82449477ff8f384f837b291a0e0.jpg 
+            "
             alt="Card image cap"
           />
           <CardBody>
@@ -79,8 +81,9 @@ class Blog extends Component {
         <Card>
           <CardImg
             top
-            width="100%"
-            src="https://placeholdit.imgix.net/~text?txtsize=33&txt=256%C3%97180&w=256&h=180"
+            width="50%"
+            src="https://i.pinimg.com/564x/e5/05/70/e5057040bd79d3bef56fbb5435527652.jpg 
+            "
             alt="Card image cap"
           />
           <CardBody>
@@ -98,7 +101,8 @@ class Blog extends Component {
           <CardImg
             top
             width="100%"
-            src="https://placeholdit.imgix.net/~text?txtsize=33&txt=256%C3%97180&w=256&h=180"
+            src="https://lejournal.cnrs.fr/sites/default/files/styles/visuel_principal/public/assets/images/gettyimages-905611148_72dpi.jpg?itok=JjCJnmdw 
+            "
             alt="Card image cap"
           />
           <CardBody>
@@ -120,7 +124,8 @@ class Blog extends Component {
           <CardImg
             top
             width="100%"
-            src="https://placeholdit.imgix.net/~text?txtsize=33&txt=256%C3%97180&w=256&h=180"
+            src="https://i.pinimg.com/564x/fd/66/db/fd66dbf3b7e192745beb71cdd62e3be9.jpg
+            "
             alt="Card image cap"
           />
           <CardBody>
