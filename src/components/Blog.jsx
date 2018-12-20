@@ -1,11 +1,12 @@
 import React, { Component } from "react";
+import "./Blog.css";
 import {
   Card,
   Button,
   CardImg,
   CardTitle,
   CardText,
-  CardGroup,
+  CardDeck,
   CardSubtitle,
   CardBody,
   Modal,
@@ -32,53 +33,7 @@ class Blog extends Component {
 
   render() {
     return (
-      <CardGroup>
-        <Card>
-          <CardImg
-            top
-            width="100%"
-            src="https://o.aolcdn.com/images/dims3/GLOB/legacy_thumbnail/630x315/format/jpg/quality/85/http%3A%2F%2Fi.huffpost.com%2Fgen%2F2452558%2Fimages%2Fn-ECOLOGY-628x314.jpg"
-            alt="Card image cap"
-          />
-          <CardBody>
-            <CardTitle>Card title</CardTitle>
-            <CardSubtitle>Card subtitle</CardSubtitle>
-            <CardText>
-              This is a wider card with supporting text below as a natural
-              lead-in to additional content. This content is a little bit
-              longer.
-            </CardText>
-            <Button onClick={this.toggle}>
-              {this.props.buttonLabel}
-              Button
-              <Modal
-                isOpen={this.state.modal}
-                toggle={this.toggle}
-                className={this.props.className}
-              >
-                <ModalHeader toggle={this.toggle}>Modal title</ModalHeader>
-                <ModalBody>
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed
-                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                  Ut enim ad minim veniam, quis nostrud exercitation ullamco
-                  laboris nisi ut aliquip ex ea commodo consequat. Duis aute
-                  irure dolor in reprehenderit in voluptate velit esse cillum
-                  dolore eu fugiat nulla pariatur. Excepteur sint occaecat
-                  cupidatat non proident, sunt in culpa qui officia deserunt
-                  mollit anim id est laborum.
-                </ModalBody>
-                <ModalFooter>
-                  <Button color="primary" onClick={this.toggle}>
-                    Do Something
-                  </Button>{" "}
-                  <Button color="secondary" onClick={this.toggle}>
-                    Cancel
-                  </Button>
-                </ModalFooter>
-              </Modal>
-            </Button>
-          </CardBody>
-        </Card>
+      <CardDeck>
         <Card>
           <CardImg
             top
@@ -87,11 +42,17 @@ class Blog extends Component {
             alt="Card image cap"
           />
           <CardBody>
-            <CardTitle>Card title</CardTitle>
-            <CardSubtitle>Card subtitle</CardSubtitle>
+            <CardTitle>
+              Développement durable et numérique : un impact qui n’est pas
+              virtuel
+            </CardTitle>
+            <CardSubtitle>...</CardSubtitle>
             <CardText>
-              This card has supporting text below as a natural lead-in to
-              additional content.
+              Bien que les révolutions technologiques puissent être perçus comme
+              des « alliés » du développement durable, il faut néanmoins,
+              souligner les risques que ces technologies numériques peuvent
+              engendrer, notamment au travers de leur consommation d’énergie, et
+              des ressources liées à leur déploiement.
             </CardText>
             <Button>Button</Button>
           </CardBody>
@@ -104,17 +65,78 @@ class Blog extends Component {
             alt="Card image cap"
           />
           <CardBody>
-            <CardTitle>Card title</CardTitle>
-            <CardSubtitle>Card subtitle</CardSubtitle>
+            <CardTitle>
+              Le terrible impact des smartphones sur l’environnement
+            </CardTitle>
+            <CardSubtitle>...</CardSubtitle>
             <CardText>
-              This is a wider card with supporting text below as a natural
-              lead-in to additional content. This card has even longer content
-              than the first to show that equal height action.
+              Alors qu’il se vend près de 47 smartphones par seconde dans le
+              monde, cette production n’est pas sans conséquence sur la planète
             </CardText>
             <Button>Button</Button>
           </CardBody>
         </Card>
-      </CardGroup>
+        <Card>
+          <CardImg
+            top
+            width="100%"
+            src="https://placeholdit.imgix.net/~text?txtsize=33&txt=256%C3%97180&w=256&h=180"
+            alt="Card image cap"
+          />
+          <CardBody>
+            <CardTitle> Le terrible bilan carbone des smartphones</CardTitle>
+            <CardSubtitle>...</CardSubtitle>
+            <CardText>
+              Les émissions de gaz à effet de serre (GES) des technologies de
+              l’information et de la communication ne cessent de progresser,
+              avec une mention toute particulière pour les smartphones.
+            </CardText>
+            <Button>Button</Button>
+          </CardBody>
+        </Card>
+        <Card>
+          <CardImg
+            top
+            width="100%"
+            src="https://placeholdit.imgix.net/~text?txtsize=33&txt=256%C3%97180&w=256&h=180"
+            alt="Card image cap"
+          />
+          <CardBody>
+            <CardTitle> Numérique : le grand gâchis énergétique</CardTitle>
+            <CardSubtitle>...</CardSubtitle>
+            <CardText>
+              Ordinateurs, data centers, réseaux… engloutissent près de 10 % de
+              la consommation mondiale d’électricité. Et ce chiffre ne cesse
+              d’augmenter. S’il n’est évidemment pas question de se passer des
+              progrès apportés par le numérique, les scientifiques pointent un
+              mode de fonctionnement peu optimisé et très énergivore. Cet
+              article fait partie du Top 10 des contenus les plus lus sur notre
+              site cette année.
+            </CardText>
+            <Button>Button</Button>
+          </CardBody>
+        </Card>
+        <Card>
+          <CardImg
+            top
+            width="100%"
+            src="https://placeholdit.imgix.net/~text?txtsize=33&txt=256%C3%97180&w=256&h=180"
+            alt="Card image cap"
+          />
+          <CardBody>
+            <CardTitle>Le numérique, c’est plus écologique ?</CardTitle>
+            <CardSubtitle>...</CardSubtitle>
+            <CardText>
+              Abandonner les supports matériels et choisir le numérique, est-ce
+              la solution pour économiser les ressources naturelles ? La réponse
+              n’est pas évidente : si le papier consomme des arbres,
+              l’électronique utilise des métaux, du plastique, des terres rares…
+              Décryptage au cas par cas.
+            </CardText>
+            <Button>Button</Button>
+          </CardBody>
+        </Card>
+      </CardDeck>
     );
   }
 }
