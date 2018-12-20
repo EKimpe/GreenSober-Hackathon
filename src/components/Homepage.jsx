@@ -6,6 +6,11 @@ class Homepage extends React.Component {
     super(props);
     this.state = {};
   }
+
+  updatePage = () => {
+    this.props.history.push('/quiz');
+  };
+
   render() {
     return (
       <div container-fluid='true'>
@@ -53,7 +58,11 @@ class Homepage extends React.Component {
               durables sur le marché actuel !
             </p>
             <br />
-            <button id='quizButton' className='mb-4 mt-1'>
+            <button
+              onClick={this.updatePage}
+              id='quizButton'
+              className='mb-4 mt-1'
+            >
               Accède au quiz
             </button>
           </div>
