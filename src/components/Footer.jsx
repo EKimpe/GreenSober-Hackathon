@@ -5,8 +5,10 @@ const Footer = () => {
   return (
     <footer className='footer navbar-dark'>
       <div className='container-fluid'>
-        <ul className='row text-center d-flex list-unstyled justify-content-center pt-3 mb-0'>
-          <li className='mb-2 col-xs-12 col-sm-2'>LOGO</li>
+        <ul className='row align-items-center text-center d-flex list-unstyled justify-content-center pt-3 mb-0'>
+          <li className='mb-2 col-xs-12 col-sm-2'>
+            <img src='./img/Logo.png' alt='logo' />
+          </li>
           <li className='col-xs-12 col-sm-2 text-white mb-2'>
             Mention Légales
           </li>

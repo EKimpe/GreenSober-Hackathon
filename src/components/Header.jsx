@@ -26,9 +26,15 @@ class Header extends React.Component {
   render() {
     return (
       <div>
-        <Navbar id='nav-tool' color='light' light expand='md'>
-          <NavbarBrand id='nav-item' href='/'>
-            SoberGreen!
+        <Navbar
+          id='nav-tool'
+          className='pt-O mt-0 mb-0'
+          color='light'
+          light
+          expand='md'
+        >
+          <NavbarBrand id='nav-item' className='pt-0 pb-0' href='/'>
+            <img src='./img/Logo.png' alt='logo' />
           </NavbarBrand>
           <NavbarToggler onClick={this.toggle} />
           <Collapse isOpen={this.state.isOpen} navbar>

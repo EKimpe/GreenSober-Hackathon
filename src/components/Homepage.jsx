@@ -16,7 +16,7 @@ class Homepage extends React.Component {
       <div container-fluid='true'>
         <img
           className='img-fluid bg-img'
-          src='./bg-Homepage.jpg'
+          src='./img/bg-Homepage.jpg'
           alt='background'
         />
         <div className='row text-center'>
