@@ -5,7 +5,7 @@ import {
   CardImg,
   CardTitle,
   CardText,
-  CardGroup,
+  CardDeck,
   CardSubtitle,
   CardBody,
   Container,
@@ -18,14 +18,9 @@ const Example = props => {
     <Container>
       <Row>
         <Col>
-          <CardGroup>
+          <CardDeck>
             <Card>
-              <CardImg
-                top
-                width="100%"
-                src="https://i.pinimg.com/564x/19/17/51/191751b40a4010018962f748b814abe3.jpg"
-                alt="Card image cap"
-              />
+              <CardImg top width="100%" src="./draw.jpg" alt="Card image cap" />
               <CardBody>
                 <CardTitle>
                   Développement durable et numérique : un impact qui n’est pas
@@ -47,7 +42,7 @@ const Example = props => {
               <CardImg
                 top
                 width="100%"
-                src="https://i.pinimg.com/564x/19/17/51/191751b40a4010018962f748b814abe3.jpg"
+                src="./phone.jpg"
                 alt="Card image cap"
               />
               <CardBody>
@@ -67,7 +62,7 @@ const Example = props => {
               <CardImg
                 top
                 width="100%"
-                src="https://i.pinimg.com/564x/19/17/51/191751b40a4010018962f748b814abe3.jpg"
+                src="./ville.jpg"
                 alt="Card image cap"
               />
               <CardBody>
@@ -81,19 +76,14 @@ const Example = props => {
                 <Button>Button</Button>
               </CardBody>
             </Card>
-          </CardGroup>
+          </CardDeck>
         </Col>
       </Row>
       <Row>
         <Col>
-          <CardGroup>
+          <CardDeck>
             <Card>
-              <CardImg
-                top
-                width="100%"
-                src="https://i.pinimg.com/564x/19/17/51/191751b40a4010018962f748b814abe3.jpg"
-                alt="Card image cap"
-              />
+              <CardImg top width="100%" src="./nope.jpg" alt="Card image cap" />
               <CardBody>
                 <CardTitle>Card title</CardTitle>
                 <CardSubtitle>Card subtitle</CardSubtitle>
@@ -109,7 +99,7 @@ const Example = props => {
               <CardImg
                 top
                 width="100%"
-                src="https://i.pinimg.com/564x/19/17/51/191751b40a4010018962f748b814abe3.jpg"
+                src="./seven.jpg"
                 alt="Card image cap"
               />
               <CardBody>
@@ -124,12 +114,7 @@ const Example = props => {
               </CardBody>
             </Card>
             <Card>
-              <CardImg
-                top
-                width="100%"
-                src="https://i.pinimg.com/564x/19/17/51/191751b40a4010018962f748b814abe3.jpg"
-                alt="Card image cap"
-              />
+              <CardImg top width="100%" src="./tree.jpg" alt="Card image cap" />
               <CardBody>
                 <CardTitle>Card title</CardTitle>
                 <CardSubtitle>Card subtitle</CardSubtitle>
@@ -141,7 +126,7 @@ const Example = props => {
                 <Button>Button</Button>
               </CardBody>
             </Card>
-          </CardGroup>
+          </CardDeck>
         </Col>
       </Row>
     </Container>
