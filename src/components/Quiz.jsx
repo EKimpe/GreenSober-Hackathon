@@ -182,7 +182,7 @@ class Quiz extends Component {
                           >
                             <Label>
                               <Input
-                                type="radio"
+                                type="checkbox"
                                 name="radio"
                                 onClick={() => {
                                   this.getNbPoints(answer);
@@ -202,12 +202,35 @@ class Quiz extends Component {
                     </Button>
                   </Form>
                 ) : (
-                  <div>
-                    <p>Finiii</p>
-                    <p>
-                      Tu as {this.state.nbPoints} points, donc le portable
-                      parfait pour toi sera : {this.state.finalAnswer}
-                    </p>
+                  <div className="smartphoneResult">
+                    <h4>Félicitations ! Voici ton futur smartphone : </h4>
+                    <Col md={{ size: 4 }}>
+                      <img
+                        src={fadeImages[2]}
+                        width="300"
+                        height="300"
+                        alt="smartphone"
+                      />
+                    </Col>
+                    <Col md={{ size: 4 }}>
+                      <p>Il s'agit d'un BLABLABLA, de BLABLABLA.</p>
+                      <ul>
+                        <li>Date de sortie :</li>
+                        <li>Note général :</li>
+                        <li>Note énergétique :</li>
+                        <li>Note impact environnemental :</li>
+                      </ul>
+                      <p>Les + :</p>
+                      <ul>
+                        <li>Blabla</li>
+                        <li>Blabla</li>
+                      </ul>
+                      <p>Les - :</p>
+                      <ul>
+                        <li>Blabla</li>
+                        <li>Blabla</li>
+                      </ul>
+                    </Col>
                   </div>
                 )}
               </div>
