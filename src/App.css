@@ -43,6 +43,12 @@
   font-size: 20px;
 }
 
+button {
+  background: linear-gradient(0.45turn, #a0f7bf, #8bf9b2, #a0f7bf);
+  border-radius: 10px;
+  border: 2px 2px solid grey;
+}
+
 #quizButton {
   text-align: center;
 }
