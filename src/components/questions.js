@@ -36,10 +36,10 @@ const quiz = {
     {
       question: "3) Quel budget pour ton smartphone ?",
       answers: [
-        { label: "0 à 400€", point: 2 },
-        { label: "401 à 700€", point: 4 },
+        { label: "Entre 150 et 400€", point: 2 },
+        { label: "Entre 401 et 700€", point: 4 },
         {
-          label: "701 à 900€",
+          label: "Entre 701 et 900€",
           point: 6
         },
         {

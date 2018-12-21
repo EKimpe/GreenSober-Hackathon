@@ -30,13 +30,15 @@
   left: 50%;
   transform: translate(-50%, -50%);
   font-size: 54px;
-  font-family: 'Charm';
-  color: #d2e3f2;
-  text-shadow: 2px 1px #73d696;
+  font-family: 'Courrier New';
+  color: white;
+  text-shadow: 2px 1px #06a335;
+  background-color: rgba(160, 247, 191, 0.4);
+  width: 100%;
 }
 
 .title {
-  font-family: 'Charm';
+  font-family: 'Courrier New';
   font-size: 40px;
   font-weight: bold;
   color: #06a335;
@@ -111,6 +113,20 @@ footer {
   margin-top: 75px;
 }
 
+.float {
+  float: left;
+}
+
+.details {
+  width: 100%;
+}
+
+.blogTitle {
+  font-family: 'Charm';
+  font-size: 36px;
+  font-weight: bold;
+}
+
 @media screen and (max-width: 640px) {
   #nav-item {
     padding-left: 0 !important;
@@ -126,5 +142,12 @@ footer {
   .bandeau2 {
     position: absolute;
     left: 83%;
+  }
+  .float {
+    float: none;
+  }
+
+  .slogan {
+    top: 58.5%;
   }
 }

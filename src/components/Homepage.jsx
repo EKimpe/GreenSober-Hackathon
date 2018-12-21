@@ -23,7 +23,7 @@ class Homepage extends React.Component {
           <div className='slogan text-center'>
             SoberGreen
             <br />
-            High Tech autrement!
+            Techno & Ecolo!
           </div>
         </div>
         <div className='row ml-1 pl-1 mr-1 ml-1'>
