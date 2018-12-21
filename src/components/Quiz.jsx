@@ -140,10 +140,21 @@ class Quiz extends Component {
     return (
       <div className="quiz">
         <h2 className="mb-5 mt-3">
-          Voici notre sélection des 10 smartphones les plus écologiques du
-          marché
+          <img
+            src="http://www.icône.com/images/icones/1/3/plant-leaf.png"
+            alt="icon"
+            width="40"
+            height="40"
+          />{" "}
+          Notre sélection des 10 smartphones les plus écologiques du marché{" "}
+          <img
+            src="http://www.icône.com/images/icones/1/3/plant-leaf.png"
+            alt="icon"
+            width="40"
+            height="40"
+          />
         </h2>
-        <Container className="slide">
+        <Container className="slide mt-4">
           <Slide {...properties}>
             <div className="each-fade">
               <div className="image-container">
@@ -219,13 +230,15 @@ class Quiz extends Component {
           </Slide>
         </Container>
         <hr />
-        <Row>
-          <Col className="m-4" lg={{ size: 11 }}>
-            <h3>Nous allons t'aider à choisir ton futur smartphone écolo :</h3>
-          </Col>
-        </Row>
+        <Row />
         {this.state.isFinished === false ? (
           <Row>
+            <Col className="m-4" lg={{ size: 11 }}>
+              <h3>
+                Nous allons t'aider à choisir ton futur smartphone écolo{" "}
+                <i class="far fa-smile-beam" />
+              </h3>
+            </Col>
             <Col md={{ size: 10, offset: 2 }}>
               <div className="cardQuestions shadow ml-5 mb-4">
                 <Form>
@@ -252,7 +265,10 @@ class Quiz extends Component {
                       );
                     })}
                   </Col>
-                  <Button onClick={this.nextQuestion} className="nextQuestion">
+                  <Button
+                    onClick={this.nextQuestion}
+                    className="nextQuestion shadow"
+                  >
                     <i className="fas fa-angle-right" /> Question suivante
                   </Button>
                 </Form>
@@ -263,7 +279,6 @@ class Quiz extends Component {
           <div>
             <Row className="d-flex">
               {this.state.finalAnswer.map(answer => {
-                console.log(answer.image);
                 return (
                   <div className="toto" key={answer.id}>
                     <img
@@ -275,7 +290,7 @@ class Quiz extends Component {
                     <div className="details">
                       <p>
                         <span className="marque">{answer.marque}</span> (
-                        {answer.constructeur}).
+                        {answer.constructeur})
                       </p>
                       <ul className="list-unstyled">
                         <li>
@@ -298,10 +313,6 @@ class Quiz extends Component {
                         <li>
                           <b>Note impact environnemental :</b>{" "}
                           {answer.noteImpactEnvironnemental}
-                        </li>
-                        <li>
-                          <b>Note consommation énergétique :</b>{" "}
-                          {answer.noteConsommationEnergie}
                         </li>
                         <li>
                           <b>Note consommation énergétique :</b>{" "}
