@@ -6,7 +6,7 @@
 
 .cardQuestions {
   padding: 15px;
-  width: 920px;
+  width: 100%;
 }
 
 .questionLabel {
@@ -18,14 +18,14 @@
   border-radius: 5px;
   color: white;
   text-shadow: 2px 2px 2px rgb(71, 69, 69);
-  width: 870px;
-  font-family: "Courrier new";
+  width: 100%;
+  font-family: 'Courrier new';
 }
 
 .answers {
   text-align: left;
   padding: 15px;
-  font-family: "Courrier new";
+  font-family: 'Courrier new';
 }
 
 .nextQuestion {
@@ -36,7 +36,7 @@
   font-size: 1.2em;
   text-shadow: 2px 2px 2px rgb(71, 69, 69);
   border: 0;
-  font-family: "Courrier new";
+  font-family: 'Courrier new';
 }
 
 .nextQuestion:hover {
@@ -53,19 +53,18 @@
 .toto {
   width: 100%;
   display: flex;
-  margin-left: 300px;
+  margin-left: 10%;
   margin-top: 50px;
 }
 
 .details {
   text-align: left;
-  padding-left: 150px;
-  font-family: "Courrier new";
+  font-family: 'Courrier new';
 }
 
 h2,
 h3 {
-  font-family: "Courrier new";
+  font-family: 'Courrier new';
   font-weight: bold;
   color: rgb(83, 80, 80);
 }
@@ -73,4 +72,14 @@ h3 {
 .marque {
   font-size: 1.3em;
   font-weight: bold;
+}
+
+.help {
+  width: 100%;
+}
+
+@media screens and (max-width: 640px) {
+  .phoneImage {
+    height: 30px !important;
+  }
 }

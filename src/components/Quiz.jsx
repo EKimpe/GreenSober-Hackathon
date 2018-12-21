@@ -232,16 +232,16 @@ class Quiz extends Component {
         <hr />
         <Row />
         {this.state.isFinished === false ? (
-          <Row>
-            <Col className='m-4' lg={{ size: 11 }}>
+          <Row className='container-fluid'>
+            <Col className='help' lg={{ size: 11 }}>
               <h3>
                 Nous allons t'aider à choisir ton futur smartphone écolo{' '}
                 <i className='far fa-smile-beam' />
               </h3>
             </Col>
             <Col md={{ size: 10, offset: 2 }}>
-              <div className='cardQuestions shadow ml-5 mb-4'>
-                <Form>
+              <div className='cardQuestions shadow mb-4'>
+                <Form className='container-fluid'>
                   <Label className='questionLabel'>
                     {this.state.questions[this.state.currentQuestion].question}
                   </Label>
@@ -277,11 +277,12 @@ class Quiz extends Component {
           </Row>
         ) : (
           <div>
-            <Row className='d-flex'>
+            <Row className=' container-fluid d-flex'>
               {this.state.finalAnswer.map(answer => {
                 return (
                   <div className='toto' key={answer.id}>
                     <img
+                      className='phoneImage'
                       src={answer.image}
                       width='300'
                       height='300'
