@@ -150,4 +150,8 @@ footer {
   .slogan {
     top: 58.5%;
   }
+
+  .details {
+    padding-left: 5px !important;
+  }
 }
