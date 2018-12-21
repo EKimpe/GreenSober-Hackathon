@@ -24,6 +24,17 @@
   opacity: 0.6;
 }
 
+.slogan {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 54px;
+  font-family: 'Charm';
+  color: white;
+  text-shadow: 2px 1px #73d696;
+}
+
 .title {
   font-family: 'Charm';
   font-size: 40px;

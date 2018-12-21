@@ -7,7 +7,9 @@ const Footer = () => {
       <div className='container-fluid'>
         <ul className='row align-items-center text-center d-flex list-unstyled justify-content-center pt-3 mb-0'>
           <li className='mb-2 col-xs-12 col-sm-2'>
-            <img src='./img/Logo.png' alt='logo' />
+            <a href='/'>
+              <img src='./img/Logo.png' alt='logo' />
+            </a>
           </li>
           <li className='col-xs-12 col-sm-2 text-white mb-2'>Nous contacter</li>
           <li className='col-xs-12 col-sm-2 text-white mb-2'>

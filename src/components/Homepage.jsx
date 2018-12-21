@@ -14,11 +14,18 @@ class Homepage extends React.Component {
   render() {
     return (
       <div container-fluid='true'>
-        <img
-          className='img-fluid bg-img'
-          src='./img/bg-Homepage.jpg'
-          alt='background'
-        />
+        <div container>
+          <img
+            className='img-fluid bg-img'
+            src='./img/bg-Homepage.jpg'
+            alt='background'
+          />
+          <div className='slogan text-center'>
+            SoberGreen
+            <br />
+            High Tech autrement!
+          </div>
+        </div>
         <div className='row ml-1 pl-1 mr-1 ml-1'>
           <div className='col-lg-3 pt-5 text-center'>
             <p className='approach'>Chiffres-clés</p>
