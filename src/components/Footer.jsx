@@ -81,7 +81,7 @@ class Footer extends React.Component {
                 className="col-xs-12 col-sm-2 text-white mb-2 cursor"
                 onClick={this.toggle}
               >
-                Mention Légales
+                Mentions Légales
               </li>
               <li className="col-xs-12 col-sm-2 text-white">
                 <a

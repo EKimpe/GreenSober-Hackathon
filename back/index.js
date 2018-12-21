@@ -1,7 +1,8 @@
-const express = require('express');
-const bodyParser = require('body-parser');
-const nodemailer = require('nodemailer');
+const express = require("express");
+const bodyParser = require("body-parser");
+const nodemailer = require("nodemailer");
 const app = express();
+const { userTransporter } = require("./conf.js");
 
 app.use(bodyParser.json());
 app.use(
@@ -11,21 +12,21 @@ app.use(
 );
 
 app.use((request, response, next) => {
-  response.header('Access-Control-Allow-Origin', '*');
-  response.header('Access-Control-Allow-Headers', 'Content-Type');
+  response.header("Access-Control-Allow-Origin", "*");
+  response.header("Access-Control-Allow-Headers", "Content-Type");
   next();
 });
 
-app.post('/contact', (req, res) => {
+app.post("/contact", (req, res) => {
   // create reusable transporter object using the default SMTP transport
   nodemailer.createTestAccount((err, account) => {
     let transporter = nodemailer.createTransport({
-      host: 'smtp.gmail.com',
+      host: "smtp.gmail.com",
       port: 587,
       secure: false,
       auth: {
-        user: 'vinchent.maureen@gmail.com',
-        pass: 'Franksinatra007'
+        user: userTransporter.user,
+        pass: userTransporter.pass
       },
       tls: {
         rejectUnauthorized: false
@@ -34,11 +35,11 @@ app.post('/contact', (req, res) => {
 
     // setup email data with unicode symbols
     let mailOptions = {
-      from: 'SoberGreen', // sender address
+      from: "Sober Green", // sender address
       to: req.body.email, // list of receivers
-      subject: 'Nous avons bien reçu votre message :)', // Subject line
+      subject: "Nous avons bien reçu votre message :)", // Subject line
       text: req.body.message, // plain text body
-      html: '<b>Nous vous répondrons dans les meilleurs délais ;)</b>' // html body
+      html: "<b>Nous vous répondrons dans les meilleurs délais ;)</b>" // html body
     };
 
     // send mail with defined transport object
@@ -46,8 +47,8 @@ app.post('/contact', (req, res) => {
       if (error) {
         return console.log(error);
       }
-      res.status(200).send('Ok');
-      console.log('Message sent: %s', info.messageId);
+      res.status(200).send("Ok");
+      console.log("Message sent: %s", info.messageId);
     });
   });
 });
