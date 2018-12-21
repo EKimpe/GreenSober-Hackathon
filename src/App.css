@@ -90,6 +90,10 @@ footer {
   font-size: 18px;
 }
 
+.cursor {
+  cursor: pointer;
+}
+
 .heart {
   color: red;
 }
