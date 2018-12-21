@@ -12,4 +12,8 @@
 
 ### EFAP
 
+- Camille David
+- Manon Dauchy
+- Sonia Belkadi
+
 ## Project
