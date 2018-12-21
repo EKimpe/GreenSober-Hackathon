@@ -13,7 +13,7 @@ import {
   Col
 } from "reactstrap";
 
-const Example = props => {
+const Blog = props => {
   return (
     <Container>
       <Row>
@@ -142,4 +142,4 @@ const Example = props => {
   );
 };
 
-export default Example;
+export default Blog;
