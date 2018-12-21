@@ -6,6 +6,7 @@ import Footer from './components/Footer';
 import Homepage from './components/Homepage';
 import Quiz from './components/Quiz';
 import Blog from './components/Blog';
+import Contact from './components/Contact';
 
 class App extends Component {
   render() {
