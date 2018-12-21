@@ -1,4 +1,4 @@
-import React from "react";
+import React from 'react';
 import {
   Card,
   Button,
@@ -11,7 +11,7 @@ import {
   Container,
   Row,
   Col
-} from "reactstrap";
+} from 'reactstrap';
 
 const Example = props => {
   return (
@@ -20,7 +20,12 @@ const Example = props => {
         <Col>
           <CardDeck>
             <Card>
-              <CardImg top width="100%" src="./draw.jpg" alt="Card image cap" />
+              <CardImg
+                top
+                width='100%'
+                src='./img/draw.jpg'
+                alt='Card image cap'
+              />
               <CardBody>
                 <CardTitle>
                   Développement durable et numérique : un impact qui n’est pas
@@ -41,9 +46,9 @@ const Example = props => {
             <Card>
               <CardImg
                 top
-                width="100%"
-                src="./phone.jpg"
-                alt="Card image cap"
+                width='100%'
+                src='./img/phone.jpg'
+                alt='Card image cap'
               />
               <CardBody>
                 <CardTitle>
@@ -61,9 +66,9 @@ const Example = props => {
             <Card>
               <CardImg
                 top
-                width="100%"
-                src="./ville.jpg"
-                alt="Card image cap"
+                width='100%'
+                src='./img/ville.jpg'
+                alt='Card image cap'
               />
               <CardBody>
                 <CardTitle>Le terrible bilan carbone des smartphones</CardTitle>
@@ -84,7 +89,12 @@ const Example = props => {
         <Col>
           <CardDeck>
             <Card>
-              <CardImg top width="100%" src="./nope.jpg" alt="Card image cap" />
+              <CardImg
+                top
+                width='100%'
+                src='./img/nope.jpg'
+                alt='Card image cap'
+              />
               <CardBody>
                 <CardTitle>Numérique : le grand gâchis énergétique</CardTitle>
                 <CardSubtitle> </CardSubtitle>
@@ -103,9 +113,9 @@ const Example = props => {
             <Card>
               <CardImg
                 top
-                width="100%"
-                src="./seven.jpg"
-                alt="Card image cap"
+                width='100%'
+                src='./img/seven.jpg'
+                alt='Card image cap'
               />
               <CardBody>
                 <CardTitle>Le numérique, c’est plus écologique ?</CardTitle>
@@ -121,7 +131,12 @@ const Example = props => {
               </CardBody>
             </Card>
             <Card>
-              <CardImg top width="100%" src="./tree.jpg" alt="Card image cap" />
+              <CardImg
+                top
+                width='100%'
+                src='./img/tree.jpg'
+                alt='Card image cap'
+              />
               <CardBody>
                 <CardTitle>
                   Fairphone, l’OVNI des smartphones, à l’assaut du grand public
