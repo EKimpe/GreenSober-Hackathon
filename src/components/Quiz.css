@@ -16,14 +16,14 @@
 }
 
 .nextQuestion {
-  background-color: #7adb9c;
+  background-color: #2c2e2c;
   margin: 15px;
   color: white;
   font-weight: bold;
 }
 
 .nextQuestion:hover {
-  background-color: #58a172;
+  background-color: #151816;
   margin: 15px;
   color: white;
   font-weight: bold;
@@ -31,4 +31,23 @@
 
 .smartphoneResult {
   text-align: left;
+}
+
+.toto {
+  width: 100%;
+  display: flex;
+  margin-left: 300px;
+  margin-top: 50px;
+}
+
+.details {
+  text-align: left;
+  padding-left: 150px;
+}
+
+h2,
+h3,
+.questionLabel {
+  font-family: "Charm";
+  font-weight: bold;
 }
