@@ -4,7 +4,7 @@
 
 ### Wild Code School
 
-- Nicolas Duhamel - Profil GitHub : [Nicolas59650](http://github.com/Nicolas59650)
+- François Axel Gaveau - Profil GitHub : [fa-gaveau](http://github.com/fa-gaveau)
 - Maureen Vinchent - Profil GitHub : [maureenVt](http://github.com/maureenVt)
 - Steven Antal - Profil Github : [StevenAD62 ](http://github.com/StevenAD62)
 - Emma Kimpe - Profil GitHub : [Maka4Maka](http://github.com/Maka4Maka)
