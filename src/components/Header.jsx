@@ -50,7 +50,7 @@ class Header extends React.Component {
                 </NavLink>
               </NavItem>
               <NavItem>
-                <NavLink id='nav-item' className='pl-5 ml-5' href='/blog'>
+                <NavLink id='nav-item' className='pl-5 ml-5' href='/contact'>
                   Nous contacter
                 </NavLink>
               </NavItem>

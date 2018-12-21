@@ -17,6 +17,7 @@ class App extends Component {
             <Route exact path='/' component={Homepage} />
             <Route path='/quiz' component={Quiz} />
             <Route path='/blog' component={Blog} />
+            <Route path='/contact' component={Contact} />
           </Switch>
         </BrowserRouter>
         <Footer />
