@@ -14,7 +14,7 @@ class Homepage extends React.Component {
   render() {
     return (
       <div container-fluid='true'>
-        <div container>
+        <div container='true'>
           <img
             className='img-fluid bg-img'
             src='./img/bg-Homepage.jpg'
