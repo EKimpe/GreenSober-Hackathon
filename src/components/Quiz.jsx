@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import React, { Component } from 'react';
 import {
   Container,
   Row,
@@ -8,15 +8,15 @@ import {
   FormGroup,
   Label,
   Input
-} from "reactstrap";
-import "./Quiz.css";
-import { quiz } from "./questions";
-import { Slide } from "react-slideshow-image";
+} from 'reactstrap';
+import './Quiz.css';
+import { quiz } from './questions';
+import { Slide } from 'react-slideshow-image';
 
 const fadeImages = [
-  "https://www.ordissimo.fr/698-large_default/smartphone-ordissimo-LeNumeroUn.jpg",
-  "https://www.ordissimo.fr/698-large_default/smartphone-ordissimo-LeNumeroUn.jpg",
-  "https://www.ordissimo.fr/698-large_default/smartphone-ordissimo-LeNumeroUn.jpg"
+  'https://www.ordissimo.fr/698-large_default/smartphone-ordissimo-LeNumeroUn.jpg',
+  'https://www.ordissimo.fr/698-large_default/smartphone-ordissimo-LeNumeroUn.jpg',
+  'https://www.ordissimo.fr/698-large_default/smartphone-ordissimo-LeNumeroUn.jpg'
 ];
 
 const properties = {
@@ -68,84 +68,84 @@ class Quiz extends Component {
     let score = this.state.nbPoints;
     if (score >= 20 && score < 26) {
       this.setState({
-        finalAnswer: "Smartphone 1"
+        finalAnswer: 'Smartphone 1'
       });
     }
     if (score >= 26 && score < 32) {
       this.setState({
-        finalAnswer: "Smartphone 2"
+        finalAnswer: 'Smartphone 2'
       });
     }
     if (score >= 32 && score < 38) {
       this.setState({
-        finalAnswer: "Smartphone 3"
+        finalAnswer: 'Smartphone 3'
       });
     }
     if (score >= 38 && score < 44) {
       this.setState({
-        finalAnswer: "Smartphone 4"
+        finalAnswer: 'Smartphone 4'
       });
     }
     if (score >= 44 && score < 50) {
       this.setState({
-        finalAnswer: "Smartphone 5"
+        finalAnswer: 'Smartphone 5'
       });
     }
     if (score >= 50 && score < 56) {
       this.setState({
-        finalAnswer: "Smartphone 6"
+        finalAnswer: 'Smartphone 6'
       });
     }
     if (score >= 56 && score < 60) {
       this.setState({
-        finalAnswer: "Smartphone 7"
+        finalAnswer: 'Smartphone 7'
       });
     }
     if (score >= 60 && score < 66) {
       this.setState({
-        finalAnswer: "Smartphone 8"
+        finalAnswer: 'Smartphone 8'
       });
     }
     if (score >= 66 && score <= 72) {
       this.setState({
-        finalAnswer: "Smartphone 9"
+        finalAnswer: 'Smartphone 9'
       });
     }
     if (score >= 74 && score <= 80) {
       this.setState({
-        finalAnswer: "Smartphone 10"
+        finalAnswer: 'Smartphone 10'
       });
     }
   };
 
   render() {
     return (
-      <div className="quiz">
-        <h2 className="mb-5 mt-3">
+      <div className='quiz'>
+        <h2 className='mb-5 mt-3'>
           Voici notre sélection des 10 smartphones les plus écologiques du
           marché
         </h2>
-        <Container className="slide">
+        <Container className='slide'>
           <Slide {...properties}>
-            <div className="each-fade">
-              <div className="image-container">
-                <img src={fadeImages[0]} width="300" height="300" />
-                <img src={fadeImages[0]} width="300" height="300" />
-                <img src={fadeImages[0]} width="300" height="300" />
+            <div className='each-fade'>
+              <div className='image-container'>
+                <img src={fadeImages[0]} width='300' height='300' alt='phone' />
+                <img src={fadeImages[0]} width='300' height='300' alt='phone' />
+                <img src={fadeImages[0]} width='300' height='300' alt='phone' />
               </div>
             </div>
-            <div className="each-fade">
-              <div className="image-container">
-                <img src={fadeImages[1]} width="300" height="300" />
-                <img src={fadeImages[1]} width="300" height="300" />
-                <img src={fadeImages[1]} width="300" height="300" />
+            <div className='each-fade'>
+              <div className='image-container'>
+                <img src={fadeImages[1]} width='300' height='300' alt='phone' />
+                <img src={fadeImages[1]} width='300' height='300' alt='phone' />
+                <img src={fadeImages[1]} width='300' height='300' alt='phone' />
               </div>
             </div>
-            <div className="each-fade">
-              <div className="image-container">
-                <img src={fadeImages[2]} width="300" height="300" />
-                <img src={fadeImages[2]} width="300" height="300" />
-                <img src={fadeImages[2]} width="300" height="300" />
+            <div className='each-fade'>
+              <div className='image-container'>
+                <img src={fadeImages[2]} width='300' height='300' alt='phone' />
+                <img src={fadeImages[2]} width='300' height='300' alt='phone' />
+                <img src={fadeImages[2]} width='300' height='300' alt='phone' />
               </div>
             </div>
           </Slide>
@@ -153,7 +153,7 @@ class Quiz extends Component {
         <hr />
         <Container>
           <Row>
-            <Col className="m-4" md={{ size: 12 }}>
+            <Col className='m-4' md={{ size: 12 }}>
               <h3>
                 Nous allons t'aider à choisir ton futur smartphone écolo :
               </h3>
@@ -161,10 +161,10 @@ class Quiz extends Component {
           </Row>
           <Row>
             <Col md={{ size: 10, offset: 1 }}>
-              <div className="cardQuestions rounded">
+              <div className='cardQuestions rounded'>
                 {this.state.isFinished === false ? (
                   <Form>
-                    <Label className="questionLabel">
+                    <Label className='questionLabel'>
                       {
                         this.state.questions[this.state.currentQuestion]
                           .question
@@ -177,13 +177,13 @@ class Quiz extends Component {
                         return (
                           <FormGroup
                             check
-                            className="answers"
+                            className='answers'
                             key={answer.label}
                           >
                             <Label>
                               <Input
-                                type="radio"
-                                name="radio"
+                                type='radio'
+                                name='radio'
                                 onClick={() => {
                                   this.getNbPoints(answer);
                                 }}
@@ -196,9 +196,9 @@ class Quiz extends Component {
                     </Col>
                     <Button
                       onClick={this.nextQuestion}
-                      className="nextQuestion"
+                      className='nextQuestion'
                     >
-                      <i className="fas fa-angle-right" /> Question suivante
+                      <i className='fas fa-angle-right' /> Question suivante
                     </Button>
                   </Form>
                 ) : (

@@ -1,31 +1,55 @@
-import React from "react";
-import { TwitterTimelineEmbed } from "react-twitter-embed";
+import React from 'react';
+import { TwitterTimelineEmbed } from 'react-twitter-embed';
 
 class Homepage extends React.Component {
   constructor(props) {
     super(props);
     this.state = {};
   }
+
+  updatePage = () => {
+    this.props.history.push('/quiz');
+  };
+
   render() {
     return (
-      <div container-fluid="true">
-        <img className="img-fluid bg-img" src="./bg-Homepage.jpg" alt="cook" />
-        <div className="row text-center">
-          <div className="col-lg-3 pt-5">
-            <p className="approach">Chiffres-clés</p>
-            <p>Le smartphone c'est aussi :</p>
-            <ul id="keynumbers">
-              <li>11% de la consommation énergétique mondiale</li>
-              <li>3% des émissions carbone de la planète</li>
-              <li>22% de notre pollution quotidienne</li>
-            </ul>
-            <p className="knowledge">Le saviez-vous?</p>
-            <p>
-              Recycler un smartphone permet d’économiser 70 kg de ressources
-              naturelles
-            </p>
+      <div container-fluid='true'>
+        <div container='true'>
+          <img
+            className='img-fluid bg-img'
+            src='./img/bg-Homepage.jpg'
+            alt='background'
+          />
+          <div className='slogan text-center'>
+            SoberGreen
+            <br />
+            High Tech autrement!
           </div>
-          <div className="col-lg-6 pt-5">
+        </div>
+        <div className='row ml-1 pl-1 mr-1 ml-1'>
+          <div className='col-lg-3 pt-5 text-center'>
+            <div className='firstAside'>
+              <img className='bandeau' src='./img/bandeau.png' alt='bandeau' />
+              <p className='approach'>Chiffres-clés</p>
+              <p>Le smartphone c'est aussi :</p>
+              <ul id='keynumbers'>
+                <li>11% de la consommation énergétique mondiale</li>
+                <li>3% des émissions carbone de la planète</li>
+                <li>22% de notre pollution quotidienne</li>
+              </ul>
+            </div>
+            <div className='secondAside'>
+              <img className='bandeau2' src='./img/bandeau.png' alt='bandeau' />
+              <p className='knowledge text-center'>Le saviez-vous?</p>
+              <p>
+                Recycler un smartphone permet d’économiser 70 kg de ressources
+                naturelles!
+              </p>
+            </div>
+          </div>
+          <div className='col-lg-6 pt-5 text-justify'>
+            <p className='title text-center'>Pourquoi SoberGreen?</p>
+            <br />
             <p>
               On oublie trop souvent que la transition numérique, engagée depuis
               plusieurs années, a une empreinte environnementale colossale.
@@ -35,8 +59,7 @@ class Homepage extends React.Component {
               différents matériaux qui polluent, chacun à sa manière.
             </p>
             <br />
-            <p className="approach">Notre démarche ?</p>
-            <br />
+            <p className='approach text-center pb-2'>Notre démarche ?</p>
             <p>
               Le Smartphone est l’outil que vous avez toujours dans la poche, à
               portée de main. Mais saviez-vous que la manière dont il est
@@ -49,16 +72,22 @@ class Homepage extends React.Component {
               durables sur le marché actuel !
             </p>
             <br />
-            <button id="quizButton" className="mb-4 mt-1">
-              Accède au quiz
-            </button>
+            <div className='text-center'>
+              <button
+                onClick={this.updatePage}
+                id='quizButton'
+                className='mb-4 mt-1'
+              >
+                Accède au quiz
+              </button>
+            </div>
           </div>
-          <div className="col-lg-3 pt-5">
+          <div className='col-lg-3 pt-5'>
             <div>
               <TwitterTimelineEmbed
-                sourceType="profile"
-                screenName="green_sober"
-                options={{ height: 800, width: 400 }}
+                sourceType='profile'
+                screenName='green_sober'
+                options={{ height: 600, width: 400 }}
               />
             </div>
           </div>

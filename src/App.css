@@ -8,31 +8,89 @@
 
 #nav-tool {
   background: linear-gradient(0.45turn, #a0f7bf, #73d696, #a0f7bf);
+  font-family: 'Charm';
+  font-weight: bold;
 }
 
 #nav-item {
   color: white;
   text-shadow: 1px 1px grey;
-  font-size: 22px;
+  font-size: 24px;
 }
 
 .bg-img {
-  height: 300px;
+  height: 400px;
   width: 100%;
-  opacity: 0.7;
+  opacity: 0.6;
+}
+
+.slogan {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 54px;
+  font-family: 'Charm';
+  color: #d2e3f2;
+  text-shadow: 2px 1px #73d696;
+}
+
+.title {
+  font-family: 'Charm';
+  font-size: 40px;
+  font-weight: bold;
+  color: #06a335;
+}
+
+.firstAside {
+  box-shadow: 5px 5px 10px gainsboro;
+}
+
+.secondAside {
+  box-shadow: 5px 5px 10px gainsboro;
+}
+
+.bandeau {
+  position: absolute;
+  left: 81%;
+  top: 5.3%;
+}
+
+.bandeau2 {
+  position: absolute;
+  left: 81%;
 }
 
 #keynumbers {
   text-align: left;
 }
 
-.approach {
+.approach,
+.knowledge {
+  font-family: 'Charm';
   font-weight: bold;
-  text-decoration: underline;
+  font-size: 20px;
+}
+
+button {
+  background: linear-gradient(0.45turn, #a0f7bf, #8bf9b2, #a0f7bf);
+  border-radius: 10px;
+  border: 2px 2px solid grey;
+}
+
+#quizButton {
+  text-align: center;
 }
 
 footer {
   background: linear-gradient(0.45turn, #a0f7bf, #73d696, #a0f7bf);
+  font-family: 'Charm';
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.cursor {
+  cursor: pointer;
 }
 
 .heart {
@@ -49,14 +107,24 @@ footer {
 }
 
 .knowledge {
-  padding-top: 70px;
-  font-weight: bold;
-  text-decoration: underline;
+  padding-top: 20px;
+  margin-top: 75px;
 }
 
 @media screen and (max-width: 640px) {
   #nav-item {
     padding-left: 0 !important;
     margin-left: 0 !important;
+  }
+
+  .bandeau {
+    position: absolute;
+    left: 83%;
+    top: 10.5%;
+  }
+
+  .bandeau2 {
+    position: absolute;
+    left: 83%;
   }
 }
