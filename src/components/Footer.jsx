@@ -9,6 +9,7 @@ const Footer = () => {
           <li className='mb-2 col-xs-12 col-sm-2'>
             <img src='./img/Logo.png' alt='logo' />
           </li>
+          <li className='col-xs-12 col-sm-2 text-white mb-2'>Nous contacter</li>
           <li className='col-xs-12 col-sm-2 text-white mb-2'>
             Mention Légales
           </li>

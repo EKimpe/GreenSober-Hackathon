@@ -19,8 +19,8 @@ class Homepage extends React.Component {
           src='./img/bg-Homepage.jpg'
           alt='background'
         />
-        <div className='row text-center'>
-          <div className='col-lg-3 pt-5'>
+        <div className='row ml-1 pl-1 mr-1 ml-1'>
+          <div className='col-lg-3 pt-5 text-center'>
             <p className='approach'>Chiffres-clés</p>
             <p>Le smartphone c'est aussi :</p>
             <ul id='keynumbers'>
@@ -28,13 +28,15 @@ class Homepage extends React.Component {
               <li>3% des émissions carbone de la planète</li>
               <li>22% de notre pollution quotidienne</li>
             </ul>
-            <p className='knowledge'>Le saviez-vous?</p>
+            <p className='knowledge text-center'>Le saviez-vous?</p>
             <p>
               Recycler un smartphone permet d’économiser 70 kg de ressources
-              naturelles
+              naturelles!
             </p>
           </div>
-          <div className='col-lg-6 pt-5'>
+          <div className='col-lg-6 pt-5 text-justify'>
+            <p className='title text-center'>Pourquoi SoberGreen?</p>
+            <br />
             <p>
               On oublie trop souvent que la transition numérique, engagée depuis
               plusieurs années, a une empreinte environnementale colossale.
@@ -44,8 +46,7 @@ class Homepage extends React.Component {
               différents matériaux qui polluent, chacun à sa manière.
             </p>
             <br />
-            <p className='approach'>Notre démarche ?</p>
-            <br />
+            <p className='approach text-center pb-2'>Notre démarche ?</p>
             <p>
               Le Smartphone est l’outil que vous avez toujours dans la poche, à
               portée de main. Mais saviez-vous que la manière dont il est
@@ -58,13 +59,15 @@ class Homepage extends React.Component {
               durables sur le marché actuel !
             </p>
             <br />
-            <button
-              onClick={this.updatePage}
-              id='quizButton'
-              className='mb-4 mt-1'
-            >
-              Accède au quiz
-            </button>
+            <div className='text-center'>
+              <button
+                onClick={this.updatePage}
+                id='quizButton'
+                className='mb-4 mt-1'
+              >
+                Accède au quiz
+              </button>
+            </div>
           </div>
           <div className='col-lg-3 pt-5'>
             <div>
