@@ -28,18 +28,24 @@ class Homepage extends React.Component {
         </div>
         <div className='row ml-1 pl-1 mr-1 ml-1'>
           <div className='col-lg-3 pt-5 text-center'>
-            <p className='approach'>Chiffres-clés</p>
-            <p>Le smartphone c'est aussi :</p>
-            <ul id='keynumbers'>
-              <li>11% de la consommation énergétique mondiale</li>
-              <li>3% des émissions carbone de la planète</li>
-              <li>22% de notre pollution quotidienne</li>
-            </ul>
-            <p className='knowledge text-center'>Le saviez-vous?</p>
-            <p>
-              Recycler un smartphone permet d’économiser 70 kg de ressources
-              naturelles!
-            </p>
+            <div className='firstAside'>
+              <img className='bandeau' src='./img/bandeau.png' alt='bandeau' />
+              <p className='approach'>Chiffres-clés</p>
+              <p>Le smartphone c'est aussi :</p>
+              <ul id='keynumbers'>
+                <li>11% de la consommation énergétique mondiale</li>
+                <li>3% des émissions carbone de la planète</li>
+                <li>22% de notre pollution quotidienne</li>
+              </ul>
+            </div>
+            <div className='secondAside'>
+              <img className='bandeau2' src='./img/bandeau.png' alt='bandeau' />
+              <p className='knowledge text-center'>Le saviez-vous?</p>
+              <p>
+                Recycler un smartphone permet d’économiser 70 kg de ressources
+                naturelles!
+              </p>
+            </div>
           </div>
           <div className='col-lg-6 pt-5 text-justify'>
             <p className='title text-center'>Pourquoi SoberGreen?</p>

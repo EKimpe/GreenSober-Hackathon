@@ -42,6 +42,25 @@
   color: #06a335;
 }
 
+.firstAside {
+  box-shadow: 5px 5px 10px gainsboro;
+}
+
+.secondAside {
+  box-shadow: 5px 5px 10px gainsboro;
+}
+
+.bandeau {
+  position: absolute;
+  left: 81%;
+  top: 5.3%;
+}
+
+.bandeau2 {
+  position: absolute;
+  left: 81%;
+}
+
 #keynumbers {
   text-align: left;
 }
@@ -85,12 +104,24 @@ footer {
 }
 
 .knowledge {
-  padding-top: 70px;
+  padding-top: 20px;
+  margin-top: 75px;
 }
 
 @media screen and (max-width: 640px) {
   #nav-item {
     padding-left: 0 !important;
     margin-left: 0 !important;
+  }
+
+  .bandeau {
+    position: absolute;
+    left: 83%;
+    top: 10.5%;
+  }
+
+  .bandeau2 {
+    position: absolute;
+    left: 83%;
   }
 }
