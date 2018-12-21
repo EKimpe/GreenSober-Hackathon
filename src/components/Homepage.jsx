@@ -87,7 +87,7 @@ class Homepage extends React.Component {
               <TwitterTimelineEmbed
                 sourceType='profile'
                 screenName='green_sober'
-                options={{ height: 800, width: 400 }}
+                options={{ height: 600, width: 400 }}
               />
             </div>
           </div>
