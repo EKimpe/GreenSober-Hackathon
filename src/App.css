@@ -30,13 +30,15 @@
   left: 50%;
   transform: translate(-50%, -50%);
   font-size: 54px;
-  font-family: 'Charm';
-  color: #d2e3f2;
-  text-shadow: 2px 1px #73d696;
+  font-family: 'Courrier New';
+  color: white;
+  text-shadow: 2px 1px #06a335;
+  background-color: rgba(160, 247, 191, 0.4);
+  width: 100%;
 }
 
 .title {
-  font-family: 'Charm';
+  font-family: 'Courrier New';
   font-size: 40px;
   font-weight: bold;
   color: #06a335;
@@ -143,5 +145,9 @@ footer {
   }
   .float {
     float: none;
+  }
+
+  .slogan {
+    top: 58.5%;
   }
 }
