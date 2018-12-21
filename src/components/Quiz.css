@@ -14,18 +14,18 @@
   font-size: 1.3em;
   padding: 15px;
   border: 1px solid gainsboro;
-  background-color: gainsboro;
+  background-color: rgb(143, 65, 65);
   border-radius: 5px;
   color: white;
   text-shadow: 2px 2px 2px rgb(71, 69, 69);
   width: 100%;
-  font-family: 'Courrier new';
+  font-family: "Courrier new";
 }
 
 .answers {
   text-align: left;
   padding: 15px;
-  font-family: 'Courrier new';
+  font-family: "Courrier new";
 }
 
 .nextQuestion {
@@ -36,7 +36,7 @@
   font-size: 1.2em;
   text-shadow: 2px 2px 2px rgb(71, 69, 69);
   border: 0;
-  font-family: 'Courrier new';
+  font-family: "Courrier new";
 }
 
 .nextQuestion:hover {
@@ -59,12 +59,12 @@
 
 .details {
   text-align: left;
-  font-family: 'Courrier new';
+  font-family: "Courrier new";
 }
 
 h2,
 h3 {
-  font-family: 'Courrier new';
+  font-family: "Courrier new";
   font-weight: bold;
   color: rgb(83, 80, 80);
 }

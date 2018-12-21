@@ -1,6 +1,6 @@
-import React, { Component } from 'react';
-import { Form, FormGroup, Label, Input, Button } from 'reactstrap';
-import axios from 'axios';
+import React, { Component } from "react";
+import { Form, FormGroup, Label, Input, Button } from "reactstrap";
+import axios from "axios";
 
 class Contact extends Component {
   constructor(props) {
@@ -10,7 +10,7 @@ class Contact extends Component {
         email: undefined,
         name: undefined,
         message: undefined,
-        confirmation: ''
+        confirmation: ""
       }
     };
   }
@@ -23,19 +23,19 @@ class Contact extends Component {
       message: this.state.fields.message
     };
     axios({
-      method: 'post',
-      url: 'http://localhost:8080/contact',
+      method: "post",
+      url: "http://localhost:8080/contact",
       data: body
     })
       .then(res => {
         if (res.status === 200) {
           let fields = {};
-          fields['email'] = '';
-          fields['message'] = '';
-          fields['name'] = '';
+          fields["email"] = "";
+          fields["message"] = "";
+          fields["name"] = "";
           this.setState({
             confirmation: (
-              <p className='confirm'>Le message a bien été envoyé</p>
+              <p className="confirm">Le message a bien été envoyé</p>
             ),
             fields: fields
           });
@@ -56,45 +56,45 @@ class Contact extends Component {
 
   render() {
     return (
-      <div id='page' className='container'>
-        <h2 className='pt-4 text-center'>Nous contacter</h2>
+      <div id="page" className="container contact">
+        <h2 className="pt-5 pb-5 text-center">Nous contacter</h2>
         <Form onSubmit={this.contactForm}>
           <FormGroup>
-            <Label className='pt-3' />
+            <Label className="pt-3" />
             <Input
-              type='name'
-              name='name'
-              id='examplename'
-              placeholder='Saisis ton nom'
+              type="name"
+              name="name"
+              id="examplename"
+              placeholder="Saisis ton nom"
               onChange={this.handleChange}
-              value={this.state.fields.name || ''}
+              value={this.state.fields.name || ""}
             />
           </FormGroup>
-          <FormGroup className='pt-4'>
-            <Label className='Email' />
+          <FormGroup className="pt-4">
+            <Label className="Email" />
             <Input
-              type='email'
-              name='email'
-              id='exampleEmail'
-              placeholder='Saisis ton mail'
+              type="email"
+              name="email"
+              id="exampleEmail"
+              placeholder="Saisis ton mail"
               onChange={this.handleChange}
-              value={this.state.fields.email || ''}
+              value={this.state.fields.email || ""}
             />
           </FormGroup>
           <FormGroup>
-            <Label className='pt-4' />
+            <Label className="pt-4" />
             <Input
-              className='pb-5'
-              type='textarea'
-              name='message'
-              id='exampleText'
-              placeholder='Saisis ton message'
+              className="pb-5"
+              type="textarea"
+              name="message"
+              id="exampleText"
+              placeholder="Saisis ton message"
               onChange={this.handleChange}
-              value={this.state.fields.message || ''}
+              value={this.state.fields.message || ""}
             />
           </FormGroup>
-          <FormGroup className='pt-3'>
-            <Button type='submit'>Envoyer</Button>
+          <FormGroup className="pt-3">
+            <Button type="submit">Envoyer</Button>
           </FormGroup>
         </Form>
         {this.state.confirmation}
