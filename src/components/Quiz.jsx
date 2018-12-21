@@ -220,14 +220,14 @@ class Quiz extends Component {
         </Container>
         <hr />
         <Row>
-          <Col className="m-4" md={{ size: 12 }}>
+          <Col className="m-4" lg={{ size: 11 }}>
             <h3>Nous allons t'aider à choisir ton futur smartphone écolo :</h3>
           </Col>
         </Row>
         {this.state.isFinished === false ? (
           <Row>
-            <Col md={{ size: 10, offset: 1 }}>
-              <div className="cardQuestions">
+            <Col md={{ size: 10, offset: 2 }}>
+              <div className="cardQuestions shadow ml-5 mb-4">
                 <Form>
                   <Label className="questionLabel">
                     {this.state.questions[this.state.currentQuestion].question}
@@ -274,39 +274,50 @@ class Quiz extends Component {
                     />
                     <div className="details">
                       <p>
-                        Il s'agit d'un {answer.marque}, de {answer.constructeur}
-                        .
+                        <span className="marque">{answer.marque}</span> (
+                        {answer.constructeur}).
                       </p>
                       <ul className="list-unstyled">
-                        <li>Date de sortie : {answer.dateSortie}</li>
                         <li>
-                          Système d'exploitation : {answer.systemeExploitation}
+                          <b>Date de sortie :</b> {answer.dateSortie}
                         </li>
-                        <li>Prix : {answer.prixProduit}</li>
                         <li>
-                          Prix de la consommation sur 2 ans :{" "}
+                          <b>Système d'exploitation :</b>{" "}
+                          {answer.systemeExploitation}
+                        </li>
+                        <li>
+                          <b>Prix :</b> {answer.prixProduit}
+                        </li>
+                        <li>
+                          <b>Prix de la consommation sur 2 ans :</b>{" "}
                           {answer.prixConsommationsSur2Ans}
                         </li>
-                        <li>Note générale : {answer.noteGenerale}</li>
                         <li>
-                          Note impact environnemental :{" "}
+                          <b>Note générale :</b> {answer.noteGenerale}
+                        </li>
+                        <li>
+                          <b>Note impact environnemental :</b>{" "}
                           {answer.noteImpactEnvironnemental}
                         </li>
                         <li>
-                          Note consommation énergétique :{" "}
+                          <b>Note consommation énergétique :</b>{" "}
                           {answer.noteConsommationEnergie}
                         </li>
                         <li>
-                          Note consommation énergétique :{" "}
+                          <b>Note consommation énergétique :</b>{" "}
                           {answer.noteConsommationEnergie}
                         </li>
                       </ul>
-                      <p>Les + :</p>
+                      <p>
+                        Les <i class="fas fa-plus" /> :
+                      </p>
                       <ul>
                         <li>{answer.lesPlus[0]}</li>
                         <li>{answer.lesPlus[1]}</li>
                       </ul>
-                      <p>Les - :</p>
+                      <p>
+                        Les <i class="fas fa-minus" /> :
+                      </p>
                       <ul>
                         <li>{answer.lesMoins[0]}</li>
                         <li>{answer.lesMoins[1]}</li>
