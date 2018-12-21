@@ -31,7 +31,7 @@
   transform: translate(-50%, -50%);
   font-size: 54px;
   font-family: 'Charm';
-  color: white;
+  color: #d2e3f2;
   text-shadow: 2px 1px #73d696;
 }
 
@@ -69,7 +69,6 @@
 .knowledge {
   font-family: 'Charm';
   font-weight: bold;
-  text-decoration: underline;
   font-size: 20px;
 }
 
@@ -88,6 +87,10 @@ footer {
   font-family: 'Charm';
   font-weight: bold;
   font-size: 18px;
+}
+
+.cursor {
+  cursor: pointer;
 }
 
 .heart {
