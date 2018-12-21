@@ -6,7 +6,7 @@
 
 .cardQuestions {
   padding: 15px;
-  width: 900px;
+  width: 920px;
 }
 
 .questionLabel {
@@ -17,13 +17,15 @@
   background-color: gainsboro;
   border-radius: 5px;
   color: white;
-  text-shadow: 1px 1px 1px black;
-  width: 850px;
+  text-shadow: 2px 2px 2px rgb(71, 69, 69);
+  width: 870px;
+  font-family: "Courrier new";
 }
 
 .answers {
   text-align: left;
   padding: 15px;
+  font-family: "Courrier new";
 }
 
 .nextQuestion {
@@ -32,8 +34,9 @@
   color: white;
   font-weight: bold;
   font-size: 1.2em;
-  text-shadow: 1px 1px 1px black;
+  text-shadow: 2px 2px 2px rgb(71, 69, 69);
   border: 0;
+  font-family: "Courrier new";
 }
 
 .nextQuestion:hover {
@@ -57,10 +60,12 @@
 .details {
   text-align: left;
   padding-left: 150px;
+  font-family: "Courrier new";
 }
 
-h2 {
-  font-family: "Charm";
+h2,
+h3 {
+  font-family: "Courrier new";
   font-weight: bold;
   color: rgb(83, 80, 80);
 }
