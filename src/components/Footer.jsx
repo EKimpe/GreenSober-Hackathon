@@ -1,6 +1,6 @@
 import React from 'react';
 import { SocialIcon } from 'react-social-icons';
-import { Button, Modal, ModalHeader, ModalBody, ModalFooter } from 'reactstrap';
+import { Button, Modal, ModalBody, ModalFooter } from 'reactstrap';
 
 class Footer extends React.Component {
   constructor(props) {
@@ -17,11 +17,6 @@ class Footer extends React.Component {
   };
 
   render() {
-    const closeBtn = (
-      <button className='close text-white' onClick={this.toggle}>
-        &times;
-      </button>
-    );
     return (
       <div>
         <Modal
